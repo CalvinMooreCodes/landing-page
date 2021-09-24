@@ -1,0 +1,291 @@
+/* reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom styling */
+
+* {box-sizing: border-box;}
+
+/* Grid */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap; 
+}
+
+.row {
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;  
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.col-1 {
+    width: 8,33%;
+}
+.col-2 {
+    width: 16,66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33,32%;
+}
+.col-5 {
+    width: 41,65%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58,31%;
+}
+.col-8 {
+    width: 66,64%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83,33;
+}
+.col-11 {
+    width: 91,63%;
+}
+.col-12 {
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 991px) {
+        .col-1,
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-5,
+        .col-6,
+        .col-7,
+        .col-8,
+        .col-9,
+        .col-10,
+        .col-11,
+        .col-12 {
+            width:100%;
+        }
+    }
+/* Global */
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.btn {
+    background-color: #3b81f6;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px 25px;
+    font-size: 13px;
+}
+
+.align-items-center-row {
+align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* menu */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin : 15px 0;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 10px;
+    margin-left: auto;
+}
+
+/* Content */
+
+p {
+    margin-bottom: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    line-height: 1.6em;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* Sections > hero */
+
+section.hero {
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+/* Sections > info */
+
+section.info h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section.info div.container {
+    box-sizing: border-box;
+    padding: 0 100px;
+}
+
+section.info .bbb {
+    border: blue solid 3px;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 15px;
+}
+
+section.info p {
+    width: 100%;
+}
+
+/* Sections > quote */
+
+section.quote p {
+    font-weight: bold;
+    text-align: right;
+}
+
+section.quote div.container {
+    box-sizing: border-box;
+    padding: 0 100px;
+}
+
+section.quote {
+    background-color: hsl(0, 0%, 90%);
+}
+
+
+
+/* Sections > sign-up */
+
+.bluebox {
+    width: 100%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    background-color: #3b81f6;
+    color: white;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 125px;
+    justify-content: space-between;
+}
+
+.bluebox-content > *:last-child {
+    margin: 0;
+}
+
+.btn-white-outline {
+    border: 1px white solid;
+}
+
+/* footer */
+footer.copyright {
+    text-align: center;
+    color: white;
+    background-color: #1f2937;
+    padding: 20px;
+}
+
+footer.copyright p {
+    margin: 0;
+}
